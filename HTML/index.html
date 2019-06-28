@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grooove Music 247</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <header>
+        <a href="index.html" class="logo">Grooove</a>
+        <img class="musicbar" src="../img/Mobile-MusicBar.png">
+        <a class="menu" href="#"><img src="../img/menu.svg"></a>
+
+        <nav>
+            <ul class="header-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <svg class="background-shape-mobile" width="375" height="499" viewBox="0 0 375 499" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-6 146.853L335.927 0L383 342.157L30.2101 499L-6 146.853Z" fill="#F1EDE7"/>
+        </svg>
+        <svg class="version2" width="375" height="499" viewBox="0 0 375 499" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-6 146.853L335.927 0L383 342.157L30.2101 499L-6 146.853Z" fill="#F1EDE7"/>
+        </svg>
+        <img class="background-shape-ipad" src="../img/Section2-Background-ipad.svg" alt="">
+        <section class="hero">
+
+            <img src="../img/backgroundshapehero.svg" alt="" class="background-shape-hero-mobile animate">
+            <img src="../img/Backgroundshapeheroipad.svg" alt="" class="background-shape-hero-ipad animate">
+            <img src="../img/Background shape.svg" alt="" class="background-shape-hero animate">
+
+            <div class="body-text">
+
+                <div class="clipper">
+                    <h1>Stream, Download, & Enjoy Music</h1>
+                </div>
+                <div class="anim-panel">
+                    <p>Let us show you great music from all over the world from your favorite musicians. Search, share, import, export and sync all your playlists from your favorite music apps.</p>
+                </div>
+                <div class="clipper">
+                    <a href="#" class="cta-btn ipad-btn mobile-btn">Let's Get Started</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="subscribe">
+            <div class="clipper">
+                <img class="starshapemobile starshapeipad" src="../img/Mobile-Stars.svg" alt="">
+                <img class="cloudmobile cloudipad" src="../img/Mobile-Cloud.svg" alt="">
+                <div class="subscribe-card">
+                    <img src="../img/mobile-lady-subscribe.svg" alt="enjoying music">
+                    <h3>subscribe to our newsletter</h3>
+                    <input type="text" placeholder="Enter your email address" required>
+                    <button class="subscribe-btn-mobile subscribe-btn-ipad subscribe-btn" type="submit" class="sub-btn sub-btn-ipad sub-btn-mobile">
+                        subscribe
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+
+            <div class="clipper">
+                <ul class="footer-links">
+                    <h5>Company</h5>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">faqs</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">mission statement</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+
+                <ul class="footer-links">
+                    <h5>Quick links</h5>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms & conditions</a></li>
+                    <li><a href="#">artistes</a></li>
+                    <li><a href="#">register</a></li>
+                    <li><a href="#">subscribe</a></li>
+                </ul>
+
+                <ul class="footer-links icons">
+
+                    <h5>social media</h5>
+                    <div class="social-media">
+                        <img class="grooovelabel" src="../img/G R O O O V E _ 2 4 7.png" alt="">
+                        <img class="line" src="../img/Line.png" alt="">
+                        <div class="social-media-icons">
+                            <li>
+                                <a href="#" target="blank"><img src="../img/linkedin-link.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank"><img src="../img/Instagram-link.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank"><img src="../img/Twitter-link.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank"><img src="../img/Facebook-link.png" alt=""></a>
+                            </li>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="anim-panel">
+                <img src="../img/Background-shape.svg" alt="" class="footer-background-shape">
+            </div>
+            <div class="bottom-strip">
+                <img src="../img/Copyright.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+
+            // wait until window is loaded - meaning all images, stylesheets, js, fonts, media assets, and links
+            window.addEventListener("load", function(e) {
+
+                document.body.style.display = 'block';
+                var tl = new TimelineMax();
+
+                tl.staggerFrom('.logo', 3, {
+                    opacity: 0,
+                    scale: .5,
+                    x: -100,
+                    ease: Bounce.easeOut
+                }, 0.2)
+
+                tl.staggerFrom('h1', 2, {
+                    opacity: 0,
+                    scale: .5,
+                    ease: Power2.easeOut
+                }, 0.2, "-=2")
+
+                tl.staggerFrom('p', 2, {
+                    opacity: 0,
+                    y: -50,
+                    ease: Bounce.easeInOut
+                }, 0.2, "-=2")
+
+                tl.staggerFrom('.animate', 2, {
+                    opacity: 0,
+                    x: -400,
+                    ease: SteppedEase.config(5)
+                }, 0.2, )
+
+            }, false);
+        });
+    </script>
+
+</body>
+
+</html>

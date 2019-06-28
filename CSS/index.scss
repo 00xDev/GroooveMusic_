@@ -1,0 +1,667 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: calc(100% - 2em);
+    background-color: #961CCB;
+    a {
+        color: white;
+    }
+    a.logo {
+        font-size: 1.2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: whitesmoke;
+    }
+    img.musicbar {
+        width: 67px;
+        height: 28px;
+        position: absolute;
+        margin-left: 105px;
+        margin-top: -6px;
+    }
+    a.menu {
+        margin-left: auto;
+        padding: 0;
+    }
+    a.menu:hover {
+        color: #6C63FF;
+        background: #D19946;
+        border: 2px solid #F8F5F5;
+        border-radius: 50%;
+        padding: 5px;
+        transform: scale(0.8);
+    }
+    nav {
+        ul {
+            display: none;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    img.background-shape-ipad {
+        display: none;
+    }
+    svg.background-shape-mobile {
+        position: absolute;
+        width: 375px;
+        left: -6px;
+        top: 930px;
+        height: 499px;
+        opacity: 0.4;
+    }
+    svg.version2 {
+        position: absolute;
+        width: 375px;
+        height: 500px;
+        left: -6px;
+        top: 1510px;
+        opacity: 0.4;
+    }
+    section {
+        padding: 2em;
+        h3,
+        h5,
+        ul,
+        .subscribe-btn-mobile {
+            text-transform: uppercase;
+        }
+    }
+    .clipper {
+        overflow: hidden;
+    }
+    section.hero {
+        width: calc(100% - 3em);
+        height: 812px;
+        background: url("../img/Backgroundimage.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        img.background-shape-hero-ipad {
+            display: none;
+        }
+        img.background-shape-hero {
+            display: none;
+        }
+        img.background-shape-hero-mobile {
+            position: absolute;
+            width: 443.26px;
+            height: 286.3px;
+            left: -100px;
+            top: 228.91px;
+            opacity: 0.5;
+            transform: rotate(180deg);
+        }
+        div.body-text {
+            position: absolute;
+            width: calc(100%-2em);
+            height: 466px;
+            left: 0px;
+            top: 164px;
+            z-index: 15px;
+            display: flex;
+            flex-flow: column;
+            margin: 1em;
+            h1 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.5em;
+                line-height: 3rem;
+                color: #FFFFFF;
+            }
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.1rem;
+                line-height: 2rem;
+                /* or 32px */
+                text-align: justify;
+                color: #FFFFFF;
+            }
+            div.clipper {
+                a.mobile-btn {
+                    position: absolute;
+                    width: 224px;
+                    height: 70px;
+                    left: -22px;
+                    top: 420px;
+                    border: 2px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    word-spacing: 3px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    background-image: url("../img/chevron\ right.png");
+                    background-size: 30px 30px;
+                    background-repeat: no-repeat;
+                    background-position-x: 19px;
+                    background-position-y: 19px;
+                    margin: 0;
+                    padding-left: 57px;
+                    text-transform: uppercase;
+                }
+                a.mobile-btn:hover {
+                    border: none;
+                    background-color: #6C63FF;
+                }
+            }
+        }
+    }
+    section.subscribe {
+        width: calc(100% - 2em);
+        height: 504px;
+        div.clipper {
+            img.starshapemobile {
+                display: none;
+                position: absolute;
+                width: 335px;
+                height: 91px;
+                left: 20px;
+                top: 42px;
+                opacity: 0.25;
+            }
+            img.cloudmobile {
+                display: none;
+                position: absolute;
+                width: 40.97px;
+                height: 28.49px;
+                left: 32.77px;
+                top: 80px;
+                opacity: 0.25;
+            }
+            div.subscribe-card {
+                position: absolute;
+                width: calc(100% - 2em);
+                height: 256px;
+                left: 57px;
+                top: 979px;
+                margin: 0;
+                img {
+                    width: 261px;
+                    height: 140.2px;
+                }
+                h3 {
+                    width: 261px;
+                    height: 19px;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 1em;
+                    line-height: 150%;
+                    /* or 24px */
+                    color: #D19946;
+                    padding: 20px 0px 10px 0px;
+                }
+                input[type=text] {
+                    width: 261px;
+                    height: 25px;
+                    background: #FFFFFF;
+                    border-radius: 3px;
+                    border: 1px solid #6C63FF;
+                    box-sizing: border-box;
+                    font-family: 'lato', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: .7em;
+                    line-height: 150%;
+                    /* or 16px */
+                    display: flex;
+                    align-items: center;
+                    color: #909090;
+                    padding-left: 5px;
+                }
+                input[type=text]:hover {
+                    border: 1px solid #D19946;
+                }
+                .subscribe-btn-mobile {
+                    width: 261px;
+                    height: 35px;
+                    background: #6C63FF;
+                    border: none;
+                    border-radius: 3px;
+                    font-family: 'lato', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    line-height: 150%;
+                    /* or 27px */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFFFFF;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+                .subscribe-btn-mobile:hover {
+                    background: none;
+                    border: 1.3px solid #6C63FF;
+                    color: #6C63FF;
+                }
+            }
+        }
+    }
+    section.footer {
+        width: calc(100% - 2em);
+        height: 809px;
+        display: flex;
+        ul.footer-links {
+            margin-bottom: 5em;
+            position: relative;
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 24px;
+                /* identical to box height */
+                color: #717171;
+                margin-bottom: 1.2rem;
+            }
+            li {
+                margin-bottom: .7rem;
+            }
+            li a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1rem;
+                line-height: 16px;
+                color: #909090;
+                margin-bottom: 1em;
+            }
+            li a:hover {
+                color: #717171;
+                font-size: .8em;
+                font-weight: 700;
+            }
+        }
+        div.anim-panel {
+            img {
+                display: none;
+            }
+        }
+        div.social-media {
+            display: flex;
+            .line {
+                height: 120px;
+                margin: 35px 30px 0px 10px;
+            }
+            .social-media-icons {
+                margin-top: 12px;
+                li a img:hover {
+                    opacity: 0.8;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .bottom-strip {
+            width: 100%;
+            height: 22px;
+            background-color: #D19946;
+            position: absolute;
+            left: 0px;
+            top: 2353px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+    header {
+        img.musicbar {
+            width: 67px;
+            height: 28px;
+            position: absolute;
+            margin-left: 130px;
+            margin-top: -4px;
+        }
+        a.menu {
+            display: none;
+        }
+        a.menu:hover {
+            color: #6C63FF;
+        }
+        nav {
+            ul {
+                display: block;
+                display: flex;
+                li a {
+                    margin: 0;
+                    padding-left: 2.5em;
+                    font-size: .8em;
+                }
+                li a:hover {
+                    padding: 7px 14px 7px 14px;
+                    border-bottom: 1.5px solid #ffffff;
+                    font-size: .6em;
+                    font-weight: bolder;
+                    border-radius: 5px;
+                    margin-left: 2.5em;
+                }
+            }
+        }
+    }
+    .wrapper {
+        img.background-shape-ipad {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 1100px;
+        }
+        svg.background-shape-mobile {
+            display: none;
+        }
+        svg.version2 {
+            display: none;
+        }
+        section.hero {
+            div.body-text {
+                position: absolute;
+                width: calc(100% - 2em);
+                height: 510px;
+                left: 0px;
+                top: 100px;
+                z-index: 15px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                h1 {
+                    font-size: 3.5em;
+                    line-height: 5rem;
+                    margin-bottom: 0px;
+                }
+                p {
+                    font-size: 1.2em;
+                    line-height: 2rem;
+                    font-weight: 400;
+                    margin-top: 20px;
+                }
+                div.clipper {
+                    a.ipad-btn {
+                        position: absolute;
+                        width: 374px;
+                        height: 100px;
+                        left: -24px;
+                        top: 563px;
+                        background-position-x: 50px;
+                        background-position-y: 33px;
+                        padding-left: 120px;
+                        background-size: 35px 35px;
+                    }
+                }
+            }
+        }
+        section.subscribe {
+            width: 100%;
+            height: 730px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+            div.clipper {
+                div.subscribe-card {
+                    position: absolute;
+                    width: calc(100% - 6em);
+                    height: 439px;
+                    left: 130px;
+                    top: 1100px;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    img {
+                        width: calc(100% - 1em);
+                        height: 250px;
+                    }
+                    h3 {
+                        width: 100%;
+                        font-weight: 800;
+                        font-size: 30px;
+                        line-height: 150%;
+                        text-align: center;
+                        /* or 45px */
+                    }
+                    input[type=text] {
+                        width: 100%;
+                        height: 50px;
+                        font-size: 1em;
+                        background: #F8F5F5;
+                        text-align: center;
+                    }
+                    .subscribe-btn-ipad {
+                        width: 100%;
+                        height: 60px;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        section.footer {
+            width: 100%;
+            height: 300px;
+            margin: 0px 0px;
+            div.clipper {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px;
+                width: 100%;
+            }
+            ul.footer-links {
+                margin-bottom: 5em;
+                position: relative;
+                margin-right: 50px;
+                margin-top: 50px;
+                h5 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 18px;
+                }
+                li {
+                    margin-bottom: .7rem;
+                }
+                li a {
+                    font-size: .75rem;
+                }
+                li a:hover {
+                    font-size: .8em;
+                }
+            }
+            ul.icons {
+                margin-top: 67px;
+            }
+            .bottom-strip {
+                height: 25px;
+                top: 2100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 25px;
+    }
+    header {
+        img.musicbar {
+            margin-left: 160px;
+            margin-top: -1px;
+        }
+        nav {
+            ul {
+                li a {
+                    font-size: .6em;
+                    font-weight: bold;
+                    padding-left: 50px;
+                }
+                li a:hover {
+                    padding: 7px 14px 7px 14px;
+                    border: 1.5px solid #ffffff;
+                    font-size: .53em;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    margin-left: 1.56em;
+                }
+            }
+        }
+    }
+    .wrapper {
+        img.background-shape-ipad {
+            display: none;
+        }
+        section.hero {
+            width: 100%;
+            height: 1024px;
+            img.background-shape-hero-mobile {
+                display: none;
+            }
+            img.background-shape-hero {
+                display: block;
+                position: absolute;
+                width: 982px;
+                height: 400px;
+                left: -180px;
+                top: 160px;
+            }
+            div.body-text {
+                position: absolute;
+                width: 860px;
+                height: 700px;
+                top: 0px;
+                margin: 2em;
+                margin-top: 1em;
+                p {
+                    font-size: 1em;
+                    margin-bottom: 5em;
+                }
+                div.clipper {
+                    a.cta-btn {
+                        width: 483px;
+                        height: 130px;
+                        left: -2.2em;
+                        top: 570px;
+                        background-position-x: 70px;
+                        background-position-y: 43px;
+                        padding-left: 150px;
+                        background-size: 45px 45px;
+                    }
+                }
+            }
+        }
+        section.subscribe {
+            position: absolute;
+            width: 509px;
+            height: 531px;
+            left: 901px;
+            top: -905.5px;
+            margin: 0;
+            div.clipper {
+                div.subscribe-card {
+                    width: 100%;
+                    height: 531px;
+                    img {
+                        width: 100%;
+                        height: 325px;
+                    }
+                    h3 {
+                        width: 100%;
+                        font-size: 30px;
+                    }
+                    input[type=text] {
+                        width: 100%;
+                        font-size: .8em;
+                    }
+                    .subscribe-btn {
+                        width: 100%;
+                        font-size: 1em;
+                        margin-bottom: 0px;
+                    }
+                    .subscribe-btn:hover {
+                        width: 100%;
+                        border: 1.5px solid #FFFFFF;
+                        color: white;
+                    }
+                }
+            }
+        }
+        section.footer {
+            width: 100%;
+            height: 350px;
+            margin: 0px 0px;
+            div.clipper {
+                position: absolute;
+                width: 1108px;
+                height: 300px;
+                left: 166px;
+                top: 1250px;
+                ul.footer-links {
+                    margin-right: 50px;
+                    margin-top: 50px;
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+                    li {
+                        margin-bottom: .2rem;
+                    }
+                    li a {
+                        font-size: .5rem;
+                    }
+                    li a:hover {
+                        font-size: .55em;
+                    }
+                }
+                ul.icons {
+                    margin-top: 80px;
+                    div.social-media {
+                        margin-top: 25px;
+                    }
+                }
+            }
+            .bottom-strip {
+                height: 25px;
+                top: 1580px;
+            }
+            div.anim-panel {
+                img {
+                    display: block;
+                    margin: 100px auto;
+                }
+            }
+        }
+    }
+}
